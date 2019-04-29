@@ -19,7 +19,9 @@
     width: 100% !important;
   }
 }
-
+.navbar{
+  padding: 0 !important
+}
 
 .jumbotron {
   padding: 0 !important;
@@ -40,7 +42,7 @@
   background: #f1f1f1;
   background-image: url(./imgs/1.png), url(./imgs/2.png);
   background-repeat: no-repeat;
-  background-position: right 0 bottom -30%, left 0 bottom -30%;
+  background-position: right 0 bottom 10%, left 0 bottom 0;
 }
 .about p {
   text-align: center;
@@ -54,4 +56,32 @@
   font-size: 1.4em;
   width: 32%;
   color: #4c4c4c;
+}
+.consumer img{
+  display:block;
+    margin:auto;
+
+}
+.consumer{
+  background-color:#FAFAFC;
+  height: auto;
+  padding: 1.5em;
+  min-height: 140vh;
+  background-image: url(./imgs/3.png),url(./imgs/5.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 10%,left 0 bottom 0;
+}
+.farmerhead{
+  text-align: center;
+  margin-bottom: 1.2em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.farmerbody{
+  font-size: 1.2em;
+  color: #4c4c4c;
+  text-align: center;
+}
+.farmerbody p{
+  margin-bottom: 0.5em;
 }

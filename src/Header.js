@@ -9,8 +9,8 @@ class Header extends Component {
         <Navbar.Brand href="#home">
           <img
             src={logo}
-            width="170"
-            height="50"
+            width="180"
+            height="80"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />

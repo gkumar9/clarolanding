@@ -26,7 +26,7 @@ class Offering extends Component {
             defaultActiveKey="first"
             onSelect={this.handletabclick}
           >
-            <Row>
+            <Row style={{marginLeft:'5em'}}>
               <Col sm={4}>
                 <Nav
                   style={{ fontSize: "1.1em" }}
@@ -114,7 +114,7 @@ class Offering extends Component {
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                  <Row>
+                    <Row>
                       <Col sm={2}>
                         <img alt="soalr" src={solar} />
                       </Col>

@@ -12,8 +12,8 @@ class Consumer extends Component {
           <div>
             <Container>
               <Row>
-                <Col style={{ marginTop: "-11%" }} md="6">
-                  <div class="farmerhead">
+                <Col style={{ marginTop: "-12%" }} md="6">
+                  <div className="farmerhead">
                     <span>Happy farmer</span>
                   </div>
                   <div className="farmerbody">
@@ -23,7 +23,7 @@ class Consumer extends Component {
                   </div>
                 </Col>
                 <Col md="6">
-                  <div class="farmerhead">
+                  <div className="farmerhead">
                     <span>Satisfied consumer</span>
                   </div>
                   <div className="farmerbody">

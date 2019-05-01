@@ -16,7 +16,7 @@ class Offering extends Component {
   };
   render() {
     return (
-      <Jumbotron fluid>
+      <Jumbotron fluid id="offering">
         <div className="offering">
           <div className="offeringhead">
             <span>Our Offerings</span>

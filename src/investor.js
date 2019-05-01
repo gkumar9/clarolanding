@@ -8,7 +8,7 @@ import growx from './imgs/growx.png'
 class Investor extends Component{
     render(){
         return(
-            <Jumbotron fluid>
+            <Jumbotron fluid id="investor">
                 <div className="investor">
                 <div className="investorhead">
                     <span>We are backed by</span>

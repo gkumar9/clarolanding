@@ -6,7 +6,7 @@ import "./App.css";
 class Presence extends Component{
     render(){
         return(
-            <Jumbotron fluid>
+            <Jumbotron fluid id="presence">
                 <div className="presence">
                 <div className="presencehead">
                     <span>Our presence</span>

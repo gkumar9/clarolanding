@@ -6,7 +6,7 @@ import "./App.css";
 class Contactus extends Component {
   render() {
     return (
-      <Jumbotron fluid>
+      <Jumbotron fluid id="contactus">
         <div className="contactus">
           <div className="contactushead">
             <span>Contact us</span>

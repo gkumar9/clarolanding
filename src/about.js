@@ -4,7 +4,7 @@ import "./App.css";
 class About extends Component {
   render() {
     return (
-      <Jumbotron fluid>
+      <Jumbotron fluid id="about">
         <div className="about">
           <div className="abouthead">
             <span>Delivering Trust: Discover Claro Agro</span>

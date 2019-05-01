@@ -11,7 +11,7 @@ class Header extends Component {
           <img
             src={logo}
             width="180"
-            height="80"
+            height="70"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />

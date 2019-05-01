@@ -15,10 +15,10 @@ class Investor extends Component{
                 </div>
                 <div className="investorbody">
                     <Row>
-                        <Col style={{padding:'2em',marginRight:'5em'}}><img src={usaid} alt="usaid"/></Col>
-                        <Col style={{padding:'1em',marginRight:'5em'}}><img src={rbl} alt="rbl"/></Col>
-                        <Col style={{padding:'2em',marginRight:'5em'}}><img src={growx} alt="rbl"/></Col>
-                        <Col style={{padding:'1em'}}><img src={sidbi} alt="sidbi"/></Col>
+                        <Col style={{textAlign:'center',padding:'2em'}}><img style={{opacity:'0.5'}} src={usaid} alt="usaid"/></Col>
+                        <Col style={{textAlign:'center',padding:'1em'}}><img src={rbl} alt="rbl"/></Col>
+                        <Col style={{textAlign:'center',padding:'2em 4em 2em 3em'}}><img style={{opacity:'0.5'}} src={growx} alt="rbl"/></Col>
+                        <Col style={{textAlign:'center',padding:'1em'}}><img style={{opacity:'0.5'}} src={sidbi} alt="sidbi"/></Col>
                     </Row>
                 </div>
                 </div>

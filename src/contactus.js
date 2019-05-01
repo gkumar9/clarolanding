@@ -1,10 +1,70 @@
 import React, { Component } from "react";
 import { Jumbotron, Row, Col, Form, Container, Button } from "react-bootstrap";
-
+import axios from "axios";
 import "./App.css";
 
 class Contactus extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+      validated: false
+    };
+  }
+  onChangemessage = e => {
+    this.setState({ message: e.target.value });
+  };
+  onChangename = e => {
+    this.setState({ name: e.target.value });
+  };
+  onChangeemail = e => {
+    this.setState({ email: e.target.value });
+  };
+  onSubmit = event => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      axios({
+        url: "http://staging.clarolabs.in:7060/farmerinfo/visitorquery",
+        method: "POST",
+        data: {
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message
+        },
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }).then(res => {
+        console.log(res);
+        this.setState({ name: "", email: "", message: "" });
+        console.log(this.refs)
+        // this.refs.form.refs.reset();
+      });
+    }
+    this.setState({ validated: true });
+    // axios({
+    //   url: "http://staging.clarolabs.in:7060/farmerinfo/visitorquery",
+    //   method: "POST",
+    //   data: {
+    //     name: this.state.name,
+    //     email: this.state.email,
+    //     message: this.state.message
+    //   },
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   }
+    // }).then(res => {
+    //   console.log(res);
+    // });
+  };
   render() {
+    const { validated } = this.state;
     return (
       <Jumbotron fluid id="contactus">
         <div className="contactus">
@@ -17,29 +77,47 @@ class Contactus extends Component {
                 <Col sm="7" />
                 <Col sm="5">
                   <Form
-                    action="https://formspree.io/g.kumar@claroenergy.in"
-                    method="POST"
+                    ref="form"
+                    noValidate
+                    validated={validated}
+                    onSubmit={e => this.onSubmit(e)}
                   >
                     <Row>
                       <Col>
                         <Form.Control
-                          type="text"
-                          name="name"
-                          placeholder="First name"
+                          required
+                          value={this.state.name}
+                          onChange={this.onChangename}
+                          placeholder="Name"
                         />
+                        <Form.Control.Feedback
+                          style={{ color: "white" }}
+                          type="invalid"
+                        >
+                          Please provide a name.
+                        </Form.Control.Feedback>
                       </Col>
                       <Col>
                         <Form.Control
-                          name="email"
+                          required
                           type="email"
+                          value={this.state.email}
+                          onChange={this.onChangeemail}
                           placeholder="Enter email"
                         />
+                        <Form.Control.Feedback
+                          style={{ color: "white" }}
+                          type="invalid"
+                        >
+                          Please provide valid email.
+                        </Form.Control.Feedback>
                       </Col>
                     </Row>
                     <Row>
                       <Col style={{ marginTop: "1em" }}>
                         <Form.Control
-                          name="message"
+                          value={this.state.message}
+                          onChange={this.onChangemessage}
                           as="textarea"
                           rows="6"
                           placeholder="Message"

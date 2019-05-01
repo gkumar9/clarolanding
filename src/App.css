@@ -10,7 +10,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 996px) {
   .about {
     background-image: none !important;
    
@@ -18,15 +18,36 @@
   .aboutbody {
     width: 100% !important;
   }
+  /* .consumer{
+    background-image: none ;
+  } */
+  .consumer{
+    background-image: url(./imgs/5.png) !important;
+    background-position: left 0 bottom 0 !important;
+  }
   .consumer img{
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important;
   
+  }
+  .consumercolfarm{
+    margin-top: -1% !important;
+  }
+  .consumercolconsumer{
+    margin-top: 10% !important
+  }
+  .offeringrow{
+    margin-left: -2em !important
+  }
+  .offering{
+    padding: 0 3em !important;
   }
 }
 .navbar{
   padding: 0 !important
 }
-
+.consumercolfarm{
+  margin-top: -12%
+}
 .jumbotron {
   padding: 0 !important;
   margin-bottom: 0 !important;
@@ -52,9 +73,10 @@
   text-align: center;
 }
 .abouthead {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-weight: bold;
   font-size: 2.1em;
+  text-align: center
 }
 .aboutbody {
   font-size: 1.4em;
@@ -77,7 +99,7 @@
 }
 .farmerhead{
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -89,7 +111,9 @@
 .farmerbody p{
   margin-bottom: 0.3em;
 }
-
+.offeringrow{
+  margin-left: 5em;
+}
 .offering{
   background-color:white;
   /* height: auto; */
@@ -128,7 +152,7 @@ a{
 .presence{
   background-color:#FAFAFC;
   /* height: auto; */
-  padding: 0 5em 5em;
+  padding: 0 2em 3em;
   display: flex;
   min-height: 65vh;
   flex-direction: column;
@@ -163,11 +187,16 @@ a{
 }
 .investorhead{
   color:#535859;
+  width: max-content;
   text-align: center;
   margin-bottom: 1em;
   margin-top: 1em;
   font-weight: bold;
   font-size: 2em;
+}
+.investorbody{
+  width: -webkit-fill-available;
+  margin-bottom: 2em;
 }
 .contactus{
   background-image: url(./imgs/6.png);
@@ -195,9 +224,19 @@ a{
   align-items: center; */
 }
 .btn-link{
-  color:black;
+  color:#4C4C4C;
   font-weight: 600;
   font-size:1.2em;
+}
+.btn-link:hover{
+  color:black;
+  text-decoration: none
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+  cursor: initial;
+}
+a:hover{
+  text-decoration: none;
 }
 #myBtn {
   display: none;
@@ -208,13 +247,17 @@ a{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #056526;
+  background-color: #7c847f;
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 25px;
 }
 
 #myBtn:hover {
-  background-color: #A4DA22;
+  background-color: #4b4f4c;
+}
+
+.hs-form-d3aa7d7e-da95-4679-85b8-930b426a64a9_66a541de-8664-44d4-9f15-5d0e69ed677c .hs-form-field label:not(.hs-error-msg){
+  color:white
 }

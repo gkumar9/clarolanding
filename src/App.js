@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <AnchorLink href="#head"><button  id="myBtn" title="Go to top">Top</button></AnchorLink>
+      <AnchorLink href="#head"><button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button></AnchorLink>
         <Header />
         <Slider />
         <About />

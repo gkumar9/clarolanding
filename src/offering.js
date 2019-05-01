@@ -26,14 +26,14 @@ class Offering extends Component {
             defaultActiveKey="first"
             onSelect={this.handletabclick}
           >
-            <Row style={{marginLeft:'5em'}}>
+            <Row className="offeringrow" >
               <Col sm={4}>
                 <Nav
                   style={{ fontSize: "1.1em" }}
                   variant="pills"
                   className="flex-column"
                 >
-                  <Nav.Item style={{ marginBottom: "2em" }}>
+                  <Nav.Item >
                     <Nav.Link eventKey="first">
                       <Row>
                         <Col xs="10">
@@ -80,7 +80,7 @@ class Offering extends Component {
                   <Tab.Pane eventKey="first">
                     <Row>
                       <Col sm={2}>
-                        <img alt="soalr" src={solar} />
+                        <img alt="solar" src={solar} />
                       </Col>
                       <Col sm={6}>
                         <div className="offeringheadtab">

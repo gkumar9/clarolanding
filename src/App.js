@@ -8,6 +8,7 @@ import Offering from './offering.js'
 import Presence from './presence.js'
 import Investor from './investor.js'
 import Contactus from './contactus.js'
+import Footer from './footer.js'
 class App extends Component {
  
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Presence />
         <Investor />
         <Contactus />
+        <Footer />
       </div>
     );
   }

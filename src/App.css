@@ -221,10 +221,12 @@ a {
 }
 .contactus {
   background-image: url(./imgs/6.png);
-  background-repeat: unset;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   min-height: max-content;
   padding-bottom: 3.5em;
-  background-position: right 0px top -180px;
+  background-position: right 0px top -12em;
 }
 .contactushead {
   color: white;

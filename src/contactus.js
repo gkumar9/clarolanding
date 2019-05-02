@@ -30,7 +30,7 @@ class Contactus extends Component {
       event.stopPropagation();
     } else {
       axios({
-        url: "../farmerinfo/visitorquery",
+        url: "http://staging.clarolabs.in:7060/farmerinfo/visitorquery",
         method: "POST",
         data: {
           name: this.state.name,
@@ -44,6 +44,7 @@ class Contactus extends Component {
         if (res.data.data.result) {
           this.setState({ name: "", email: "", message: "" });
           document.getElementById("formsubmit").style.display = "none";
+          // this.forceUpdate();
           document.getElementById("submitmessage").style.display = "block";
         } else {
           alert(res.data.data.result);

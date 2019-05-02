@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Jumbotron, Carousel } from "react-bootstrap";
+import spice from "./imgs/img2/new.png";
+import "./App.css";
 // import irrigation from "./imgs/img2/irrigation.jpg";
 // import farm from "./imgs/img2/farm.jpg";
 // import grid from "./imgs/img2/grid.jpg";
-import spice from "./imgs/img2/new.png";
-import "./App.css";
 class Slider extends Component {
   constructor(props, context) {
     super(props, context);

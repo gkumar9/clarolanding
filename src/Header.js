@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "./imgs/logonew.jpg";
 
 class Header extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand="lg" id="head">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             width="180"
@@ -20,11 +20,24 @@ class Header extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto" />
           <Nav>
-          <AnchorLink href="#about"><Nav.Link >About</Nav.Link></AnchorLink>
-          <AnchorLink href="#offering"><Nav.Link eventKey={2}>Offering</Nav.Link></AnchorLink>
-          <AnchorLink href="#presence"><Nav.Link eventKey={3}>Presence</Nav.Link></AnchorLink>
-          <AnchorLink href="#investor"><Nav.Link eventKey={4}>Investor</Nav.Link></AnchorLink>
-          <AnchorLink href="#contactus"><Nav.Link eventKey={5}>Contact us</Nav.Link></AnchorLink>
+            <Nav.Link eventKey={1}>
+              <AnchorLink href="#about">About</AnchorLink>
+            </Nav.Link>
+            <Nav.Link eventKey={2}>
+              <AnchorLink href="#offering">Offering</AnchorLink>
+            </Nav.Link>
+            <Nav.Link eventKey={3}>
+              {" "}
+              <AnchorLink href="#presence">Presence</AnchorLink>
+            </Nav.Link>
+            <Nav.Link eventKey={4}>
+              {" "}
+              <AnchorLink href="#investor">Investor</AnchorLink>
+            </Nav.Link>
+            <Nav.Link eventKey={5}>
+              {" "}
+              <AnchorLink href="#contactus">Contact us</AnchorLink>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

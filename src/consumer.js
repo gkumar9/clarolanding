@@ -8,7 +8,7 @@ class Consumer extends Component {
     return (
       <Jumbotron fluid>
         <div className="consumer">
-          <img alt="img" src={imgs} className="responsive" />
+          <img alt="img" width="60%" src={imgs} className="responsive" />
           <div>
             <Container>
               <Row>
@@ -24,10 +24,10 @@ class Consumer extends Component {
                 </Col>
                 <Col className="consumercolconsumer" md="6">
                   <div className="farmerhead">
-                    <span>Satisfied consumer</span>
+                    <span>Satisfied partner</span>
                   </div>
                   <div className="farmerbody">
-                    <p>Farm to fork</p>
+                    <p>Sustainable farming</p>
                     <p>Tracebility via tech</p>
                     <p>Chemical free produce</p>
                   </div>

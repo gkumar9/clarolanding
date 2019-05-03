@@ -162,7 +162,7 @@ class Offering extends Component {
                       </Col>
                       <Col sm={6}>
                         <div className="offeringheadtab">
-                          <span>Sourcing green produces</span>
+                          <span>Green agri produce</span>
                         </div>
                         <div className="offeringbodytab">
                           <p>
@@ -179,7 +179,7 @@ class Offering extends Component {
                       </Col>
                       <Col sm={6}>
                         <div className="offeringheadtab">
-                          <span>Greater control on supply</span>
+                          <span>Consistent control on supply</span>
                         </div>
                         <div className="offeringbodytab">
                           <p>
@@ -215,7 +215,7 @@ class Offering extends Component {
                       </Col>
                       <Col sm={6}>
                         <div className="offeringheadtab">
-                          <span>Know your farmer</span>
+                          <span>QR code linking to farmer profile</span>
                         </div>
                         <div className="offeringbodytab">
                           <p>
@@ -232,7 +232,7 @@ class Offering extends Component {
                       </Col>
                       <Col sm={6}>
                         <div className="offeringheadtab">
-                          <span>Green organic produce</span>
+                          <span>Green agri produce</span>
                         </div>
                         <div className="offeringbodytab">
                           <p>

@@ -30,7 +30,7 @@ class Contactus extends Component {
       event.stopPropagation();
     } else {
       axios({
-        url: "http://staging.clarolabs.in:7060/farmerinfo/visitorquery",
+        url: "../farmerinfo/visitorquery",
         method: "POST",
         data: {
           name: this.state.name,
@@ -136,7 +136,7 @@ class Contactus extends Component {
                     </Row>
                   </Form>
                   <div
-                    style={{ display: "none", color: "white" }}
+                    style={{ display: "none", color: "#535859" }}
                     id="submitmessage"
                   >
                     <h2>

@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { Jumbotron, Carousel } from "react-bootstrap";
-import spice from "./imgs/img2/new.png";
+import { Jumbotron, Carousel, Container } from "react-bootstrap";
+// import spice from "./imgs/img2/new.png";
 import "./App.css";
-// import irrigation from "./imgs/img2/irrigation.jpg";
-// import farm from "./imgs/img2/farm.jpg";
-// import grid from "./imgs/img2/grid.jpg";
+import shop from "./imgs/img2/shop.jpg";
+import haldi from "./imgs/img2/haldi.jpg";
+import irrigation from "./imgs/img2/irrigation.jpg";
+import shopmobile from "./imgs/img2/shopmobile.jpg";
+import haldimobile from "./imgs/img2/haldimobile.jpg";
+import irrigationmobile from "./imgs/img2/irrigationmobile.jpg";
 class Slider extends Component {
   constructor(props, context) {
     super(props, context);
@@ -13,6 +16,9 @@ class Slider extends Component {
 
     this.state = {
       index: 0,
+      shopimg: "",
+      irrigationimg: "",
+      haldiimg: "",
       direction: null
     };
   }
@@ -23,6 +29,26 @@ class Slider extends Component {
       direction: e.direction
     });
   }
+  componentDidMount() {
+    this.setState({
+      shopimg: shop,
+      irrigationimg: irrigation,
+      haldiimg: haldi
+    });
+    if (window.screen.width <= 480) {
+      this.setState({
+        shopimg: shopmobile,
+        irrigationimg: irrigationmobile,
+        haldiimg: haldimobile
+      });
+    } else {
+      this.setState({
+        shopimg: shop,
+        irrigationimg: irrigation,
+        haldiimg: haldi
+      });
+    }
+  }
   render() {
     const { index, direction } = this.state;
     return (
@@ -31,39 +57,50 @@ class Slider extends Component {
           activeIndex={index}
           direction={direction}
           onSelect={this.handleSelect}
-          interval={1000}
+          interval={1500}
         >
           <Carousel.Item>
             <div className="imgtag">
-              <img className="d-block w-100" src={spice} alt="First slide" />
+              <img
+                className="d-block w-100"
+                src={this.state.irrigationimg}
+                alt="First slide"
+              />
             </div>
 
             <Carousel.Caption>
-              {/* <h3>First slide label</h3> */}
-              <h1>Delight your craving</h1>
-              <br />
-              <h1>while discovering new flavours</h1>
+              <h1>
+                We aim to revolutionise the social & economic fabric of rural
+                India
+              </h1>
             </Carousel.Caption>
-          </Carousel.Item>
-          {/* <Carousel.Item>
-            <div className="imgtag">
-              <img className="d-block w-100" src={grid} alt="Third slide" />
-            </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className="imgtag">
               <img
                 className="d-block w-100"
-                src={irrigation}
-                alt="Third slide"
+                src={this.state.haldiimg}
+                alt="First slide"
               />
             </div>
+
+            <Carousel.Caption>
+              <h1>Spices made from sustainable energy in Gangetic plains</h1>
+            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <div className="imgtag">
-              <img className="d-block w-100" src={farm} alt="Third slide" />
+              <img
+                className="d-block w-100"
+                src={this.state.shopimg}
+                alt="First slide"
+              />
             </div>
-          </Carousel.Item> */}
+
+            <Carousel.Caption>
+              <h1>Fresh green produce from our farms</h1>
+            </Carousel.Caption>
+          </Carousel.Item>
         </Carousel>
       </Jumbotron>
     );

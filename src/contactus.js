@@ -44,7 +44,6 @@ class Contactus extends Component {
         if (res.data.data.result) {
           this.setState({ name: "", email: "", message: "" });
           document.getElementById("formsubmit").style.display = "none";
-          // this.forceUpdate();
           document.getElementById("submitmessage").style.display = "block";
         } else {
           alert(res.data.data.result);

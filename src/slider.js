@@ -59,20 +59,17 @@ class Slider extends Component {
           onSelect={this.handleSelect}
           interval={1500}
         >
-          <Carousel.Item>
+        <Carousel.Item>
             <div className="imgtag">
               <img
                 className="d-block w-100"
-                src={this.state.irrigationimg}
+                src={this.state.shopimg}
                 alt="First slide"
               />
             </div>
 
             <Carousel.Caption>
-              <h1>
-                We aim to revolutionise the social & economic fabric of rural
-                India
-              </h1>
+              <h1>Fresh green produce from our farms</h1>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -92,15 +89,20 @@ class Slider extends Component {
             <div className="imgtag">
               <img
                 className="d-block w-100"
-                src={this.state.shopimg}
+                src={this.state.irrigationimg}
                 alt="First slide"
               />
             </div>
 
             <Carousel.Caption>
-              <h1>Fresh green produce from our farms</h1>
+              <h1>
+                We aim to revolutionise the social & economic fabric of rural
+                India
+              </h1>
             </Carousel.Caption>
           </Carousel.Item>
+          
+          
         </Carousel>
       </Jumbotron>
     );

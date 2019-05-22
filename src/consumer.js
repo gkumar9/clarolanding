@@ -14,22 +14,23 @@ class Consumer extends Component {
               <Row>
                 <Col className="consumercolfarm" md="6">
                   <div className="farmerhead">
-                    <span>Happy farmer</span>
+                    <span>For Farmers</span>
                   </div>
                   <div className="farmerbody">
-                    <p>Low cost agri</p>
-                    <p>Fair price for produce</p>
-                    <p>Farm advisory</p>
+                    <p>On Demand Irrigation</p>
+                    <p>Lower Cost</p>
+                    <p>Improved Yields</p>
+                    <p>Better Prices</p>
                   </div>
                 </Col>
                 <Col className="consumercolconsumer" md="6">
                   <div className="farmerhead">
-                    <span>Satisfied partner</span>
+                    <span>For Enterprises</span>
                   </div>
                   <div className="farmerbody">
-                    <p>Sustainable farming</p>
-                    <p>Tracebility via tech</p>
-                    <p>Chemical free produce</p>
+                    <p>Sustainable Sourcing</p>
+                    <p>Traceability Of Produce</p>
+                    <p>Visibility In Supply Chain</p>
                   </div>
                 </Col>
               </Row>

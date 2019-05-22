@@ -29,7 +29,7 @@ class App extends Component {
       <AnchorLink href="#head"><button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button></AnchorLink>
         <Header />
         <Slider />
-        <About />
+        {/* <About /> */}
         <Consumer />
         <Offering />
         <Presence />

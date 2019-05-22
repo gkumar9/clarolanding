@@ -24,7 +24,7 @@ class Header extends Component {
               <AnchorLink href="#about">About</AnchorLink>
             </Nav.Link>
             <Nav.Link eventKey={2}>
-              <AnchorLink href="#offering">Offering</AnchorLink>
+              <AnchorLink href="#offering">Offerings</AnchorLink>
             </Nav.Link>
             <Nav.Link eventKey={3}>
               {" "}
@@ -32,11 +32,11 @@ class Header extends Component {
             </Nav.Link>
             <Nav.Link eventKey={4}>
               {" "}
-              <AnchorLink href="#investor">Investor</AnchorLink>
+              <AnchorLink href="#investor">Investors</AnchorLink>
             </Nav.Link>
             <Nav.Link eventKey={5}>
               {" "}
-              <AnchorLink href="#contactus">Contact us</AnchorLink>
+              <AnchorLink href="#contactus">Contact</AnchorLink>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

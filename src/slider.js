@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Jumbotron, Carousel, Container } from "react-bootstrap";
 // import spice from "./imgs/img2/new.png";
 import "./App.css";
+import test from "./imgs/img2/Image2.JPG";
 import shop from "./imgs/img2/shop.jpg";
 import haldi from "./imgs/img2/haldi.jpg";
 import irrigation from "./imgs/img2/irrigation.jpg";
@@ -63,7 +64,7 @@ class Slider extends Component {
             <div className="imgtag">
               <img
                 className="d-block w-100"
-                src={this.state.shopimg}
+                src={test}
                 alt="First slide"
               />
             </div>
@@ -72,7 +73,7 @@ class Slider extends Component {
               <h1>Fresh green produce from our farms</h1>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <div className="imgtag">
               <img
                 className="d-block w-100"
@@ -101,7 +102,7 @@ class Slider extends Component {
               </h1>
             </Carousel.Caption>
           </Carousel.Item>
-          
+           */}
           
         </Carousel>
       </Jumbotron>

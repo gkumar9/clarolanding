@@ -44,7 +44,7 @@ class Footer extends Component {
                     </span>
                   </Col>
                   <Col sm="10" style={{ fontSize: "medium" }}>
-                    <span>F213/A, Old MB Road, Lado Sarai,</span>
+                    <span>Corporate Office:<br /> F213/A, 1st & 2nd Floor,<br /> Old M.B. Road, Lado Sarai,</span>
                     <br />
                     <span>New Delhi 110030</span>
                   </Col>

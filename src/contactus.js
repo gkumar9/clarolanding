@@ -58,7 +58,7 @@ class Contactus extends Component {
       <Jumbotron fluid id="contactus">
         <div className="contactus">
           <div className="contactushead">
-            <span>Contact us</span>
+            <span>Contact Us</span>
           </div>
           <div className="contacctusbody">
             <Container>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron, Row, Col } from "react-bootstrap";
-import map from "./imgs/map2.png";
+// import map from "./imgs/map2.png";
+import Farmer from './farmermap.js'
 import mapinfo from "./imgs/mapindex.png";
 import "./App.css";
 
@@ -10,12 +11,12 @@ class Presence extends Component{
             <Jumbotron fluid id="presence">
                 <div className="presence">
                 <div className="presencehead">
-                    <span>Our presence</span>
+                    <span>Our Presence</span>
                 </div>
                 <div className="presencebody">
                     <Row style={{marginRight:'0',marginLeft:'0'}}>
                         <Col sm={8} style={{paddingLeft:'0',paddingRight:'0'}}>
-                            <img style={{width:'100%',height:'auto'}} src={map}  alt="map"/>
+                            <Farmer />
                         </Col>
                         <Col sm={4}>
                         <img style={{width:'91%',height:'auto'}} src={mapinfo}  alt="map"/>

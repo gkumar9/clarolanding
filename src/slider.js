@@ -69,7 +69,7 @@ class Slider extends Component {
               <h1>Fresh green produce from our farms</h1>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <div className="imgtag">
               <img className="d-block w-100" src={pump} alt="Second slide" />
             </div>
@@ -77,7 +77,7 @@ class Slider extends Component {
             <Carousel.Caption>
               <h1>Spices made from sustainable energy in Gangetic plains</h1>
             </Carousel.Caption>
-          </Carousel.Item>
+          </Carousel.Item> */}
           {/* <Carousel.Item>
             <div className="imgtag">
               <img

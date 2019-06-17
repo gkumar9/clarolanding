@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Jumbotron, Carousel, Container } from "react-bootstrap";
 // import spice from "./imgs/img2/new.png";
 import "./App.css";
-import shop from "./imgs/img2/shop.jpg";
+import shop from "./imgs/img2/shop1.jpg";
 import haldi from "./imgs/img2/haldi.jpg";
 import irrigation from "./imgs/img2/irrigation.jpg";
-import shopmobile from "./imgs/img2/shopmobile.jpg";
+import shopmobile from "./imgs/img2/shopmobile1.jpg";
 import haldimobile from "./imgs/img2/haldimobile.jpg";
 import irrigationmobile from "./imgs/img2/irrigationmobile.jpg";
 class Slider extends Component {
@@ -54,10 +54,11 @@ class Slider extends Component {
     return (
       <Jumbotron fluid>
         <Carousel
+        fade={true}
           activeIndex={index}
           direction={direction}
           onSelect={this.handleSelect}
-          interval={1500}
+          interval={5000}
         >
         <Carousel.Item>
             <div className="imgtag">
